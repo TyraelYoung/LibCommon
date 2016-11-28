@@ -1,7 +1,7 @@
 package cn.tyrael.library;
 
 public class DebugConfig {
-	private boolean isDebuggable = false;
+	private boolean isDebuggable = true;
 	
 	public static DebugConfig getInstance(){
 		return new DebugConfig();
