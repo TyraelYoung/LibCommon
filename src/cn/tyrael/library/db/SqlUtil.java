@@ -5,14 +5,15 @@ import java.util.Map.Entry;
 
 public class SqlUtil {
 	/**
-	 * °Ñmap×ª»¯ÎªsetÓï¾ä
+	 * ï¿½ï¿½map×ªï¿½ï¿½Îªsetï¿½ï¿½ï¿½
 	 * @return
 	 */
 	public static String mapToSet(Map<String, String> map){
 		String set = "";
 		for(Entry<String, String> entry : map.entrySet()){
-			set += " " + entry.getKey() + "=\"" + entry.getValue() + "\" "; 
+			set += ", " + entry.getKey() + "=\"" + entry.getValue() + "\" "; 
 		}
+		set = set.substring(1);
 		return set;
 	}
 }
